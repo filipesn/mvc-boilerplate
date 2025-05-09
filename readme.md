@@ -15,10 +15,10 @@ Sistema web para o acompanhamento remoto de pacientes com feridas, em parceria c
 ### Como Executar
 
 
-Inicie o servidor no terminal
+Abra o terminal no vscode
 
 
-node server.js
+coloque `node server.js` e enter
 
 
 
