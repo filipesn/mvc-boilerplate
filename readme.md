@@ -4,7 +4,7 @@ Sistema web para o acompanhamento remoto de pacientes com feridas, em parceria c
 
 ### Funcionalidades Principais
 
-* Envio de fotos da ferid
+* Envio de fotos da ferida
 * Questionários sobre a saúde
 * Envio de mensagens sobre o estado da saúde
 * Acionamento de alerta de emergência
@@ -19,10 +19,13 @@ Faça um clone desse repositório
 Crie seu .env com os dados corretos para conectar ao seu servidor
 Faça a migraçao colocando no terminal:
 npm run init-db
-Inicie colocando no terminal:
+O projeto tem algumas dependencias, coloque no terminal:
+npm install cors dotenv ejs express method-override pg
+Agora para iniciar colocando no terminal:
 node server.js
 O servidor estara em http://localhost:3000
 Você pode testar os endpoints usando ferramentas como Postman ou Insomnia.
+O programa ira procurar uma tabela "users" e "tarefas". Navegue entre elas no site.
 
 ### Endpoints
 | Método | Rota              | Descrição               |
