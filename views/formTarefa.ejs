@@ -1,0 +1,25 @@
+<!-- filepath: views/formTarefa.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= tarefa ? 'Editar Tarefa' : 'Nova Tarefa' %></title>
+</head>
+<body>
+  <h1><%= tarefa ? 'Editar Tarefa' : 'Nova Tarefa' %></h1>
+  <form action="<%= tarefa ? '/tarefas/' + tarefa.id + '?_method=PUT' : '/tarefas' %>" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="<%= tarefa ? tarefa.nome : '' %>" required>
+    <br>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required><%= tarefa ? tarefa.descricao : '' %></textarea>
+    <br>
+    <% if (tarefa) { %>
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status" value="<%= tarefa.status %>">
+      <br>
+    <% } %>
+    <button type="submit"><%= tarefa ? 'Salvar Alterações' : 'Criar Tarefa' %></button>
+  </form>
+  <a href="/tarefas">Voltar para lista</a>
+</body>
+</html>
