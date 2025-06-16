@@ -116,6 +116,12 @@ Você pode testar os endpoints usando ferramentas como Postman, Insomnia ou dire
 
 ---
 
+## Video
+
+https://drive.google.com/file/d/13eiaLg3mmSEPk7n_5ZYe5L1aUVvPZTih/view?usp=sharing
+
+---
+
 ## Licença
 
 MIT
